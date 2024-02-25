@@ -26,7 +26,7 @@ function App() {
         setPage(res.data);
         setTotalPages(10);
       })
-      .catch((error) => console.error("Error", error));
+      .catch(() => alert("failed to fetch data"));
   };
   const handlePrevious = () => {
     if (currentPage > 1) {
